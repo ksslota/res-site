@@ -1,0 +1,331 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #966443;
+  color: #fff;
+  text-align: left;
+  padding: 10px;
+  position: fixed;
+  /* Make the header fixed to the top of the page */
+  top: 0;
+  /* Position the header at the very top of the page */
+  left: 0;
+  /* Position the header on the left side */
+  right: 0;
+  /* Stretch the header to the full width */
+  z-index: 999;
+  /* Make sure the header is on top of other content */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Add some padding to the introduction content to account for the fixed header */
+#introduction .introduction-content {
+  padding-top: 70px;
+  /* Adjust this value as needed */
+}
+
+/* Remove subheadings in Technical Skills section */
+#technical-skills .skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Center content within the grid items */
+#technical-skills .skills-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 180px;
+  /* Set a fixed height for grid items */
+}
+
+.skills-item .icon {
+  width: 90px;
+  height: 90px;
+}
+
+.skills-item img {
+  width: 100%;
+  height: 100%;
+}
+
+.skills-item p {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #966443;
+  color: #E4D3AE;
+  text-align: center;
+  padding: 10px;
+}
+
+section {
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  border-bottom: 2px solid #333;
+}
+
+h3 {
+  margin-top: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skill-category {
+  font-weight: bold;
+}
+
+/* Fade-in transition for scrolling to the next section */
+section:not(:first-child) {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+section.in-view {
+  opacity: 1;
+}
+
+/* Introduction section styles */
+#introduction {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #966443;
+  color: #E4D3AE;
+}
+
+.introduction-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.introduction-content p {
+  font-size: 24px;
+  text-align: left;
+  flex: 1;
+  max-width: 600px;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.introduction-content img {
+  width: 300px;
+  height: auto;
+  margin-left: 40px;
+}
+
+/* Header styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  margin: 0;
+  padding: 10px;
+}
+
+.header nav {
+  margin-top: 20px;
+}
+
+.header ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.header li {
+  margin-left: 20px;
+}
+
+.header a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.header a:hover {
+  color: #aaa;
+}
+
+/* Education card styles */
+.education-card {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.education-card img {
+  width: 420px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.education-card-content {
+  flex: 1;
+}
+
+.education-card h3 {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.education-card p {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+/* Relevant Coursework section styles */
+#relevant-coursework {
+  display: block;
+  /* Show Relevant Coursework */
+}
+
+#relevant-coursework .coursework-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.coursework-item {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  text-align: center;
+}
+
+/* Contact section styles */
+#contact {
+  display: flex;
+  flex-direction: column;
+  /* Set the header and cards in a column */
+  align-items: center;
+  /* Center the header horizontally */
+}
+
+.contact-cards-container {
+  display: flex;
+  flex-direction: row;
+  /* Set the cards side-by-side */
+  justify-content: center;
+  /* Center the cards horizontally */
+  width: 100%;
+}
+
+.contact-card {
+  width: 250px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact-card a {
+  text-decoration: none;
+  color: #333;
+}
+
+.contact-card img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+nav {
+  display: flex;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+nav a {
+  color: #E4D3AE;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #a1967e
+}
+
+/* Add a separator between sections */
+.separator {
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+  display: block;
+  position: relative;
+  top: -1px;
+  margin: 20px 0;
+}
+
+/* Fade-in transition for scrolling to the next section */
+.separator:not(.in-view) {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.separator.in-view {
+  opacity: 1;
+}
+
+/* New CSS styles for the circular portrait */
+.circular-portrait {
+  width: 200px;
+  /* Adjust the width and height as per your requirement */
+  height: 200px;
+  border-radius: 50%;
+  /* Make the image circular */
+  object-fit: cover;
+  /* Ensure the image maintains its aspect ratio */
+  /* You can add additional styles like border and box-shadow if desired */
+}
