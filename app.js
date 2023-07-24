@@ -43,3 +43,9 @@ function isInViewport(element) {
 
   // Call handleSeparatorScroll on page load to apply initial animations
   window.addEventListener('load', handleSeparatorScroll);
+
+// JavaScript function to toggle the navigation menu
+function toggleNav() {
+    const header = document.querySelector('.header');
+    header.classList.toggle('show-nav');
+}
