@@ -4,8 +4,8 @@ function isInViewport(element) {
     return rect.top < window.innerHeight && rect.bottom >= 0;
   }
 
-  // Function to handle the fade-in effect for sections
-  function handleScroll() {
+// Function to handle the fade-in effect for sections
+function handleScroll() {
     const sections = document.querySelectorAll('section');
     sections.forEach(section => {
       const rect = section.getBoundingClientRect();
@@ -18,14 +18,14 @@ function isInViewport(element) {
     });
   }
 
-  // Attach the scroll event listener to apply the fade-in effect
-  window.addEventListener('scroll', handleScroll);
+// Attach the scroll event listener to apply the fade-in effect
+window.addEventListener('scroll', handleScroll);
 
-  // Call handleScroll on page load to apply initial animations
-  window.addEventListener('load', handleScroll);
+// Call handleScroll on page load to apply initial animations
+window.addEventListener('load', handleScroll);
 
-  // Function to handle the fade-in effect for separators
-  function handleSeparatorScroll() {
+// Function to handle the fade-in effect for separators
+function handleSeparatorScroll() {
     const separators = document.querySelectorAll('.separator');
     separators.forEach(separator => {
       const rect = separator.getBoundingClientRect();
@@ -38,11 +38,11 @@ function isInViewport(element) {
     });
   }
 
-  // Attach the scroll event listener to apply the fade-in effect to separators
-  window.addEventListener('scroll', handleSeparatorScroll);
+// Attach the scroll event listener to apply the fade-in effect to separators
+window.addEventListener('scroll', handleSeparatorScroll);
 
-  // Call handleSeparatorScroll on page load to apply initial animations
-  window.addEventListener('load', handleSeparatorScroll);
+// Call handleSeparatorScroll on page load to apply initial animations
+window.addEventListener('load', handleSeparatorScroll);
 
 // JavaScript function to toggle the navigation menu
 function toggleNav() {
