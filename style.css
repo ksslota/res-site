@@ -191,9 +191,12 @@ section.in-view {
 }
 
 .education-card img {
-  width: 420px;
+  width: 100%;
+  /* Set the image width to fill container */
+  max-width: 200px;
+  /* Set aa maximum width to prevent overgrowing */
   height: auto;
-  margin-right: 20px;
+  /* Let the height scale automatically based on the aspect ratio */
 }
 
 .education-card-content {
@@ -320,12 +323,47 @@ nav a:hover {
 
 /* New CSS styles for the circular portrait */
 .circular-portrait {
-  width: 200px;
-  /* Adjust the width and height as per your requirement */
-  height: 200px;
+  width: 100%;
+  /* Set image width to fill container */
+  max-width: 300px;
+  height: auto;
   border-radius: 50%;
   /* Make the image circular */
   object-fit: cover;
   /* Ensure the image maintains its aspect ratio */
   /* You can add additional styles like border and box-shadow if desired */
+}
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+  /* Adjust the header layout for smaller screens */
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Hide the navigation by default */
+  .header nav {
+    display: none;
+  }
+
+  /* Add a hamburger menu icon */
+  .hamburger {
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+  }
+
+  /* Show the navigation when the hamburger menu is clicked */
+  .header.show-nav nav {
+    display: block;
+  }
+
+  /* Update the max-width of the circular portrait for smaller screens */
+  .circular-portrait {
+    max-width: 200px;
+  }
+  /* Update the max-width of the university logo for smaller screens */
+  .education-card img {
+    max-width: 150px;
+  }
 }
