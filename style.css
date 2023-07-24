@@ -337,7 +337,8 @@ nav a:hover {
 @media screen and (max-width: 768px) {
   /* Adjust the header layout for smaller screens */
   header {
-    flex-direction: column;
+    flex-direction: row-reverse;
+    justift-content: space-between;
     align-items: center;
   }
 
@@ -355,8 +356,26 @@ nav a:hover {
 
   /* Show the navigation when the hamburger menu is clicked */
   .header.show-nav nav {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #966443;
+    padding: 20px;
+    z-index: 9999;
   }
+
+  .header.show-nav nav ul {
+    list-style: none;
+    width: 100%;
+    margin: 0;
+  }
+  .header.show-nav nav li {
+    margin-bottom: 10px;
+  }
+    
 
   /* Update the max-width of the circular portrait for smaller screens */
   .circular-portrait {
