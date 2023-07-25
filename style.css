@@ -24,6 +24,9 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+.hamburger {
+  display: none;
+}
 
 /* Add some padding to the introduction content to account for the fixed header */
 #introduction .introduction-content {
@@ -356,6 +359,7 @@ nav a:hover {
 
   /* Add a hamburger menu icon */
   .hamburger {
+    display: block;
     cursor: pointer;
     font-size: 24px;
     color: #fff;
