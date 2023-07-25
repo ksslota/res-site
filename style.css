@@ -356,33 +356,12 @@ nav a:hover {
 
   /* Show the navigation when the hamburger menu is clicked */
   .header.show-nav nav {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: #966443;
-    padding: 20px;
-    z-index: 9999;
+    display: block;
   }
-
-  .header.show-nav nav ul {
-    list-style: none;
-    width: 100%;
-    margin: 0;
+  .introduction-content {
+    max-width: 80%;
   }
-  .header.show-nav nav li {
-    margin-bottom: 10px;
-  }
-    
-
-  /* Update the max-width of the circular portrait for smaller screens */
-  .circular-portrait {
-    max-width: 200px;
-  }
-  /* Update the max-width of the university logo for smaller screens */
-  .education-card img {
-    max-width: 150px;
-  }
+  .introduction-content img {
+    display: none;
+  }   
 }
