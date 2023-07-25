@@ -359,6 +359,16 @@ nav a:hover {
   .header.show-nav nav {
     display: block;
   }
+  .header.show-nav nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header.show-nav nav li:not(:last-child) {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+  }
   .introduction-content {
     max-width: 80%;
   }
