@@ -114,6 +114,7 @@ section.in-view {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 20px;
   margin-bottom: 20px;
   background-color: #966443;
