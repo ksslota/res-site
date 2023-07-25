@@ -339,7 +339,6 @@ nav a:hover {
   /* Adjust the header layout for smaller screens */
   header {
     flex-direction: row-reverse;
-    justift-content: space-between;
     align-items: center;
   }
 
