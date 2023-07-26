@@ -386,5 +386,11 @@ nav a:hover {
   }
   .introduction-content img {
     display: none;
-  }   
+  }
+  .education-card {
+    flex-direction: column;
+  }
+  .education-card-content {
+    padding-top: 10px;
+  }
 }
