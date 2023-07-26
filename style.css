@@ -393,4 +393,8 @@ nav a:hover {
   .education-card-content {
     padding-top: 10px;
   }
+  .contact-cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
