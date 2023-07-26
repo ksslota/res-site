@@ -347,6 +347,7 @@ nav a:hover {
   .header-content {
     display: flex;
     align-items: center;
+    flex-direction: column;
   }
   .header h1 {
     margin-bottom: 10px;
