@@ -6,7 +6,7 @@ body {
 }
 
 header {
-  background-color: #966443;
+  background-color: #333;
   color: #fff;
   text-align: left;
   padding: 10px;
@@ -69,8 +69,8 @@ header {
 }
 
 footer {
-  background-color: #966443;
-  color: #E4D3AE;
+  background-color: #333;
+  color: #fff;
   text-align: center;
   padding: 10px;
 }
@@ -120,8 +120,8 @@ section.in-view {
   align-items: center;
   padding: 20px;
   margin-bottom: 20px;
-  background-color: #966443;
-  color: #E4D3AE;
+  background-color: #333;
+  color: #fff;
 }
 
 .introduction-content {
