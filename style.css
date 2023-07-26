@@ -29,6 +29,14 @@ img {
   height: auto;
 }
 
+/* CSS class for image enlargement on hover */
+.enlarge-on-hover {
+  transition: transform 0.2s ease;
+}
+.enlarge-on-hover:hover {
+  transform: scale(1.1);
+}
+
 .hamburger {
   display: none;
 }
