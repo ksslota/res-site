@@ -13,11 +13,12 @@
 </head>
 
 <body>
-  <!-- Introduction section (Header and Introduction combined) -->
-  <section id="introduction" class="landing-section in-view">
-    <header class="header">
+  <header class="header">
+    <div class="header-content">
       <h1>Kenny Slota</h1>
       <div class="hamburger" onclick="toggleNav()">&#9776;</div>
+    </div>
+    <div class="nav-container">
       <nav>
         <ul>
           <li><a href="#education">Education</a></li>
@@ -28,7 +29,12 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-    </header>
+    </div>
+  </header>
+  <main>
+  <!-- Introduction section (Header and Introduction combined) -->
+  <section id="introduction" class="landing-section in-view">
+    
     <div class="introduction-content">
       <p>
         Recent Computer Science graduate with a strong foundation in programming languages such as Python, Java, and C#.
@@ -313,7 +319,7 @@
       </div>
     </div>
   </section>
-
+  </main>
   <!-- Footer section -->
   <footer>
     <p>&copy; 2023 Kenny Slota.</p>
